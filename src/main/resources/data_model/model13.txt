@@ -1,0 +1,32 @@
+Class: Manufacturer
+Properties:
+
+Manufacturer ID (string): A unique identifier assigned to the manufacturer.
+Name (string): The name of the manufacturer.
+Phone number (string): The phone number of the manufacturer.
+Address (string): The address of the manufacturer.
+Email (string): The email address of the manufacturer.
+Class: Inventory
+Properties:
+
+Inventory ID (string): A unique identifier assigned to the inventory.
+Product (Product): The product that the inventory tracks.
+Quantity (int): The quantity of the product currently in stock.
+Reorder level (int): The minimum quantity at which the product should be reordered.
+Reorder quantity (int): The quantity that should be reordered when the product's quantity falls below the reorder level.
+Class: Transaction
+Properties:
+
+Transaction ID (string): A unique identifier assigned to the transaction.
+Sale (Sale): The sale associated with the transaction.
+Payment (Payment): The payment associated with the transaction.
+Date (date): The date on which the transaction occurred.
+Class: User
+Properties:
+
+User ID (string): A unique identifier assigned to the user.
+Username (string): The username of the user.
+Password (string): The password of the user.
+Name (string): The name of the user.
+Email (string): The email address of the user.
+Role (string): The role of the user (e.g. cashier, manager, pharmacist).

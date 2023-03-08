@@ -1,0 +1,39 @@
+Here's an example of a class and property schema for a pharmacy management software:
+
+Class: Medication
+Properties:
+
+Name (string): The name of the medication.
+Strength (string): The strength of the medication.
+Dosage form (string): The form in which the medication is administered (e.g. tablet, capsule, injection, cream).
+Route of administration (string): The way in which the medication is administered (e.g. oral, topical, intravenous).
+Manufacturer (string): The name of the company that manufactures the medication.
+Lot number (string): The lot number of the medication.
+Expiration date (date): The expiration date of the medication.
+Quantity on hand (integer): The number of units of the medication currently in stock.
+Class: Prescription
+Properties:
+
+Medication (Medication): The medication being prescribed.
+Patient name (string): The name of the patient for whom the medication is being prescribed.
+Prescriber name (string): The name of the prescriber who wrote the prescription.
+Dispense date (date): The date on which the medication was dispensed.
+Quantity dispensed (integer): The number of units of the medication dispensed.
+Refills remaining (integer): The number of refills remaining on the prescription.
+Class: Order
+Properties:
+
+Medication (Medication): The medication being ordered.
+Supplier (string): The name of the supplier from whom the medication is being ordered.
+Order date (date): The date on which the order was placed.
+Quantity ordered (integer): The number of units of the medication being ordered.
+Cost per unit (float): The cost of each unit of the medication.
+Total cost (float): The total cost of the order.
+Class: Inventory
+Properties:
+
+Medication (Medication): The medication being tracked in inventory.
+Quantity on hand (integer): The number of units of the medication currently in stock.
+Minimum stock level (integer): The minimum number of units of the medication that should be kept in stock.
+Maximum stock level (integer): The maximum number of units of the medication that should be kept in stock.
+Reorder quantity (integer): The number of units of the medication to reorder when the quantity on hand falls below the minimum stock level.

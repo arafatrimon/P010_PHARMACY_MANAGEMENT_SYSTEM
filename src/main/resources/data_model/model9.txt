@@ -1,0 +1,46 @@
+Class: Customer
+Properties:
+
+Customer ID (string): A unique identifier assigned to the customer.
+Name (string): The name of the customer.
+Phone number (string): The customer's phone number.
+Address (string): The customer's address.
+Email (string): The customer's email address.
+Class: Employee
+Properties:
+
+Employee ID (string): A unique identifier assigned to the employee.
+Name (string): The name of the employee.
+Phone number (string): The employee's phone number.
+Address (string): The employee's address.
+Email (string): The employee's email address.
+Position (string): The employee's position within the pharmacy (e.g. pharmacist, pharmacy technician, cashier).
+Class: Sale
+Properties:
+
+Sale ID (string): A unique identifier assigned to the sale.
+Product (Product): The product being sold.
+Customer (Customer): The customer making the purchase.
+Employee (Employee): The employee making the sale.
+Sale date (date): The date on which the sale was made.
+Quantity sold (float): The quantity of the product sold.
+Unit price (float): The price per unit of the product sold.
+Total price (float): The total price of the sale.
+Class: ProductCategory
+Properties:
+
+Category ID (string): A unique identifier assigned to the product category.
+Name (string): The name of the product category.
+Description (string): A brief description of the product category.
+Class: Product
+Properties:
+
+Product ID (string): A unique identifier assigned to the product.
+Name (string): The name of the product.
+Category (ProductCategory): The category to which the product belongs.
+Manufacturer (Manufacturer): The manufacturer of the product.
+Strength (string): The strength of the product.
+Dosage form (string): The form in which the product is administered (e.g. tablet, capsule, injection).
+Package size (float): The size of the product package (e.g. number of tablets, volume of liquid).
+Cost price (float): The cost price of the product.
+Selling price (float): The selling price of the product.

@@ -1,0 +1,50 @@
+Here are some additional classes and properties for a medicine sell management software schema:
+
+Class: Order
+Properties:
+
+Order ID (string): A unique identifier assigned to the order.
+Product (Product): The product being ordered.
+Supplier (Supplier): The supplier from whom the product is being ordered.
+Order date (date): The date on which the order was made.
+Quantity ordered (float): The quantity of the product ordered.
+Unit price (float): The price per unit of the product ordered.
+Total price (float): The total price of the order.
+Class: Supplier
+Properties:
+
+Supplier ID (string): A unique identifier assigned to the supplier.
+Name (string): The name of the supplier.
+Phone number (string): The supplier's phone number.
+Address (string): The supplier's address.
+Email (string): The supplier's email address.
+Class: Inventory
+Properties:
+
+Product (Product): The product being tracked in inventory.
+Quantity on hand (float): The quantity of the product currently in stock.
+Reorder point (float): The minimum quantity at which the product should be reordered.
+Reorder quantity (float): The quantity to be ordered when the product reaches the reorder point.
+Class: Payment
+Properties:
+
+Sale (Sale): The sale being paid for.
+Customer (Customer): The customer making the payment.
+Payment date (date): The date on which the payment was made.
+Payment type (string): The type of payment (e.g. cash, credit card, check).
+Amount (float): The amount paid.
+Class: Report
+Properties:
+
+Start date (date): The start date for the report period.
+End date (date): The end date for the report period.
+Sales (list of Sale): The sales made during the report period.
+Expenses (list of Expense): The expenses incurred during the report period.
+Profit (float): The total profit made during the report period.
+Class: Expense
+Properties:
+
+Expense ID (string): A unique identifier assigned to the expense.
+Expense type (string): The type of expense (e.g. rent, utilities, salaries).
+Amount (float): The amount of the expense.
+Date (date): The date on which the expense was incurred.

@@ -1,0 +1,42 @@
+Class: Prescription
+Properties:
+
+Prescription ID (string): A unique identifier assigned to the prescription.
+Product (Product): The product being prescribed.
+Prescriber (Prescriber): The prescriber who wrote the prescription.
+Patient (Patient): The patient for whom the prescription is intended.
+Prescription date (date): The date on which the prescription was written.
+Dispense date (date): The date on which the prescription was dispensed.
+Quantity prescribed (float): The quantity of the product prescribed.
+Refills (int): The number of refills allowed on the prescription.
+Class: Dispensing
+Properties:
+
+Prescription (Prescription): The prescription being dispensed.
+Employee (Employee): The employee dispensing the prescription.
+Dispense date (date): The date on which the prescription was dispensed.
+Quantity dispensed (float): The quantity of the product dispensed.
+Class: Drug
+Properties:
+
+Drug ID (string): A unique identifier assigned to the drug.
+Name (string): The name of the drug.
+Strength (string): The strength of the drug.
+Dosage form (string): The form in which the drug is administered (e.g. tablet, capsule, injection).
+Manufacturer (Manufacturer): The manufacturer of the drug.
+Package size (float): The size of the drug package (e.g. number of tablets, volume of liquid).
+Class: Manufacturer
+Properties:
+
+Manufacturer ID (string): A unique identifier assigned to the manufacturer.
+Name (string): The name of the manufacturer.
+Phone number (string): The manufacturer's phone number.
+Address (string): The manufacturer's address.
+Email (string): The manufacturer's email address.
+Class: PrescriptionRecord
+Properties:
+
+Prescription (Prescription): The prescription being recorded.
+Employee (Employee): The employee recording the prescription.
+Record date (date): The date on which the prescription was recorded.
+Notes (string): Any notes related to the prescription record.

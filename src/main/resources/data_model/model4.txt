@@ -1,0 +1,43 @@
+Sure, here are a few more classes and properties that could be included in a pharmacy management software:
+
+Class: Prescription
+Properties:
+
+Medication (Medication): The medication being prescribed.
+Patient (Patient): The patient for whom the medication is being prescribed.
+Prescriber (Prescriber): The healthcare provider who wrote the prescription.
+Dosage (string): The prescribed dosage of the medication.
+Route of administration (string): The prescribed route of administration for the medication.
+Refills (integer): The number of refills allowed on the prescription.
+Prescription date (date): The date on which the prescription was written.
+Dispense date (date): The date on which the medication was dispensed.
+Days supply (integer): The number of days' worth of medication provided by the prescription.
+Status (string): The current status of the prescription (e.g. new, filled, transferred).
+Class: Medication Administration Record (MAR)
+Properties:
+
+Medication (Medication): The medication being administered.
+Patient (Patient): The patient receiving the medication.
+Prescriber (Prescriber): The healthcare provider who wrote the prescription.
+Dosage (string): The prescribed dosage of the medication.
+Route of administration (string): The prescribed route of administration for the medication.
+Time of administration (time): The time at which the medication is to be administered.
+Date of administration (date): The date on which the medication is to be administered.
+Status (string): The current status of the administration (e.g. scheduled, administered, missed).
+Class: Pharmacy Technician
+Properties:
+
+Name (string): The name of the pharmacy technician.
+Employee ID (string): The ID number associated with the technician's employment.
+Date of hire (date): The date on which the technician was hired.
+Certification (string): The certification(s) held by the technician.
+Contact information (string): The phone number and/or email address at which the technician can be reached.
+Work schedule (list of Schedule items): The technician's work schedule for the week.
+Class: Schedule
+Properties:
+
+Day of week (string): The day of the week for which the schedule applies.
+Start time (time): The time at which the work shift begins.
+End time (time): The time at which the work shift ends.
+Role (string): The role being filled during the shift (e.g. pharmacist, pharmacy technician).
+Employee (Employee): The employee assigned to the shift.

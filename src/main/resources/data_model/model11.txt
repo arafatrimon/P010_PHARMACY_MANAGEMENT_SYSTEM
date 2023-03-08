@@ -1,0 +1,77 @@
+Class: Customer
+Properties:
+
+Customer ID (string): A unique identifier assigned to the customer.
+Name (string): The name of the customer.
+Phone number (string): The customer's phone number.
+Address (string): The customer's address.
+Email (string): The customer's email address.
+Class: Employee
+Properties:
+
+Employee ID (string): A unique identifier assigned to the employee.
+Name (string): The name of the employee.
+Phone number (string): The employee's phone number.
+Address (string): The employee's address.
+Email (string): The employee's email address.
+Position (string): The employee's position within the pharmacy (e.g. pharmacist, pharmacy technician, cashier).
+Class: Sale
+Properties:
+
+Sale ID (string): A unique identifier assigned to the sale.
+Product (Product): The product being sold.
+Customer (Customer): The customer making the purchase.
+Employee (Employee): The employee making the sale.
+Sale date (date): The date on which the sale was made.
+Quantity sold (float): The quantity of the product sold.
+Unit price (float): The price per unit of the product sold.
+Total price (float): The total price of the sale.
+Class: ProductCategory
+Properties:
+
+Category ID (string): A unique identifier assigned to the product category.
+Name (string): The name of the product category.
+Description (string): A brief description of the product category.
+Class: Product
+Properties:
+
+Product ID (string): A unique identifier assigned to the product.
+Name (string): The name of the product.
+Category (ProductCategory): The category to which the product belongs.
+Manufacturer (Manufacturer): The manufacturer of the product.
+Strength (string): The strength of the product.
+Dosage form (string): The form in which the product is administered (e.g. tablet, capsule, injection).
+Package size (float): The size of the product package (e.g. number of tablets, volume of liquid).
+Cost price (float): The cost price of the product.
+Selling price (float): The selling price of the product.
+Class: Inventory
+Properties:
+
+Product (Product): The product being tracked in inventory.
+Quantity (float): The current quantity of the product in inventory.
+Reorder level (float): The minimum quantity of the product that should be kept in inventory.
+Reorder quantity (float): The quantity of the product to be ordered when the inventory falls below the reorder level.
+Class: Order
+Properties:
+
+Order ID (string): A unique identifier assigned to the order.
+Supplier (Supplier): The supplier from whom the order is being placed.
+Employee (Employee): The employee placing the order.
+Order date (date): The date on which the order was placed.
+Expected delivery date (date): The expected delivery date of the order.
+Order status (string): The status of the order (e.g. pending, shipped, received).
+Class: OrderLine
+Properties:
+
+Order (Order): The order to which the order line belongs.
+Product (Product): The product being ordered.
+Quantity (float): The quantity of the product being ordered.
+Unit price (float): The price per unit of the product being ordered.
+Class: Supplier
+Properties:
+
+Supplier ID (string): A unique identifier assigned to the supplier.
+Name (string): The name of the supplier.
+Phone number (string): The supplier's phone number.
+Address (string): The supplier's address.
+Email (string): The supplier's email address.

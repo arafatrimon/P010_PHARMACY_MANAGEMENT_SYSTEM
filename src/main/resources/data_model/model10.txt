@@ -1,0 +1,46 @@
+Class: Inventory
+Properties:
+
+Product (Product): The product being tracked in inventory.
+Quantity (float): The current quantity of the product in inventory.
+Reorder level (float): The minimum quantity of the product that should be kept in inventory.
+Reorder quantity (float): The quantity of the product to be ordered when the inventory falls below the reorder level.
+Class: Order
+Properties:
+
+Order ID (string): A unique identifier assigned to the order.
+Supplier (Supplier): The supplier from whom the order is being placed.
+Employee (Employee): The employee placing the order.
+Order date (date): The date on which the order was placed.
+Expected delivery date (date): The expected delivery date of the order.
+Order status (string): The status of the order (e.g. pending, shipped, received).
+Class: OrderLine
+Properties:
+
+Order (Order): The order to which the order line belongs.
+Product (Product): The product being ordered.
+Quantity (float): The quantity of the product being ordered.
+Unit price (float): The price per unit of the product being ordered.
+Class: Supplier
+Properties:
+
+Supplier ID (string): A unique identifier assigned to the supplier.
+Name (string
+network error
+Class: Prescription
+Properties:
+
+Prescription ID (string): A unique identifier assigned to the prescription.
+Patient (Patient): The patient for whom the prescription is written.
+Doctor (Doctor): The doctor who wrote the prescription.
+Date prescribed (date): The date on which the prescription was written.
+Medication (Medication): The medication prescribed.
+Dosage (string): The dosage of the medication prescribed.
+Frequency (string): The frequency with which the medication should be taken.
+Duration (string): The duration for which the medication should be taken.
+Class: Medication
+Properties:
+
+Medication ID (string): A unique identifier assigned to the medication.
+Name (string): The name of the medication.
+Category (MedicationCategory): The category

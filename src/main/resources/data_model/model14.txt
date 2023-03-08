@@ -1,0 +1,40 @@
+Class: Customer
+Properties:
+
+Customer ID (string): A unique identifier assigned to the customer.
+Name (string): The name of the customer.
+Phone number (string): The phone number of the customer.
+Address (string): The address of the customer.
+Email (string): The email address of the customer.
+Class: LoyaltyProgram
+Properties:
+
+Program ID (string): A unique identifier assigned to the loyalty program.
+Name (string): The name of the loyalty program.
+Point value (float): The value of each loyalty point.
+Minimum purchase amount (float): The minimum amount required for a purchase to earn loyalty points.
+Point expiration period (int): The period of time (in days) after which unused loyalty points expire.
+Class: LoyaltyPoints
+Properties:
+
+Points ID (string): A unique identifier assigned to the loyalty points.
+Customer (Customer): The customer who earned the loyalty points.
+Program (LoyaltyProgram): The loyalty program to which the points belong.
+Points balance (float): The current balance of the customer's loyalty points.
+Class: Coupon
+Properties:
+
+Coupon ID (string): A unique identifier assigned to the coupon.
+Product (Product): The product to which the coupon applies.
+Discount amount (float): The amount by which the price of the product is reduced.
+Minimum purchase amount (float): The minimum amount required for the coupon to be valid.
+Start date (date): The date on which the coupon becomes valid.
+End date (date): The date on which the coupon expires.
+Class: Refund
+Properties:
+
+Refund ID (string): A unique identifier assigned to the refund.
+Sale (Sale): The sale for which the refund is being issued.
+Amount (float): The amount being refunded.
+Refund date (date): The date on which the refund is issued.
+Reason (string): The reason for the refund.

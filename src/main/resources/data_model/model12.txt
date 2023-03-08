@@ -1,0 +1,40 @@
+Class: Payment
+Properties:
+
+Payment ID (string): A unique identifier assigned to the payment.
+Sale (Sale): The sale to which the payment is associated.
+Amount (float): The amount of the payment.
+Payment method (string): The method of payment (e.g. cash, credit card, check).
+Payment date (date): The date on which the payment was made.
+Class: Discount
+Properties:
+
+Discount ID (string): A unique identifier assigned to the discount.
+Product (Product): The product to which the discount applies.
+Discount percentage (float): The percentage by which the price of the product is reduced.
+Start date (date): The date on which the discount becomes effective.
+End date (date): The date on which the discount expires.
+Class: Tax
+Properties:
+
+Tax ID (string): A unique identifier assigned to the tax.
+Name (string): The name of the tax.
+Tax rate (float): The tax rate as a percentage.
+Class: Prescription
+Properties:
+
+Prescription ID (string): A unique identifier assigned to the prescription.
+Doctor (string): The name of the doctor who prescribed the medication.
+Patient (string): The name of the patient for whom the medication is prescribed.
+Product (Product): The medication being prescribed.
+Dosage instructions (string): The instructions for administering the medication.
+Start date (date): The date on which the medication should be started.
+End date (date): The date on which the medication should be stopped.
+Class: Pharmacy
+Properties:
+
+Pharmacy ID (string): A unique identifier assigned to the pharmacy.
+Name (string): The name of the pharmacy.
+Phone number (string): The phone number of the pharmacy.
+Address (string): The address of the pharmacy.
+Email (string): The email address of the pharmacy.
